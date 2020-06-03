@@ -16,11 +16,8 @@ csv_filepath = os.path.join("data", CSV_FILENAME)
 rows = []
 
 with open(csv_filepath, "r") as csv_file:
-
     reader = csv.DictReader(csv_file)
-
     for od in reader:
-
         rows.append(dict(od)) # ideally we would transform all the prices from strings to floats here
 
 # print(rows[0])
